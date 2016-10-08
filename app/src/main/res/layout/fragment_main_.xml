@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_main_">
 
     <Button
-        android:text="Button"
+        android:text="LifeDown"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/btCentralD"
@@ -21,10 +21,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/btCentralU" />
+        app:layout_constraintTop_toBottomOf="@+id/btCentralU"
+        android:textAllCaps="false" />
 
     <Button
-        android:text="Button"
+        android:text="LifeUp"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
         android:id="@+id/btCentralU"
@@ -35,7 +36,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp"
         app:layout_constraintBottom_toTopOf="@+id/horizLine"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="false" />
 
     <android.support.constraint.Guideline
         android:layout_width="384dp"
@@ -47,21 +49,22 @@
         app:layout_constraintGuide_end="228dp" />
 
     <Button
-        android:text="P+"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btAddP"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_green_light"
+        android:textAllCaps="false"
         android:layout_marginStart="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp"
-        android:textSize="18sp"
-        android:textColor="@android:color/holo_green_light" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="+Point" />
 
     <Button
-        android:text="L+"
-        android:layout_width="wrap_content"
+        android:text="+Life"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/btAddL"
         app:layout_constraintLeft_toLeftOf="@+id/btAddP"
@@ -69,21 +72,26 @@
         app:layout_constraintBottom_toTopOf="@+id/btCentralU"
         android:layout_marginBottom="8dp"
         app:layout_constraintTop_toBottomOf="@+id/btAddP"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_red_dark"
+        android:textAllCaps="false"
+        tools:typeface="normal" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="278dp"
         android:id="@+id/btSubP"
         app:layout_constraintTop_toTopOf="@+id/btAddP"
         app:layout_constraintBottom_toBottomOf="@+id/btAddP"
         android:textColor="@android:color/holo_green_light"
-        android:text="P-" />
+        android:text="-Point"
+        android:textAllCaps="false"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
 
     <Button
-        android:text="L-"
-        android:layout_width="wrap_content"
+        android:text="-Life"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/btSubL"
         app:layout_constraintRight_toRightOf="@+id/btSubP"
@@ -91,11 +99,12 @@
         app:layout_constraintBottom_toTopOf="@+id/btCentralU"
         android:layout_marginBottom="8dp"
         app:layout_constraintTop_toBottomOf="@+id/btSubP"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_red_dark"
+        android:textAllCaps="false" />
 
     <Button
-        android:text="L+"
-        android:layout_width="wrap_content"
+        android:text="+Life"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/btAddLD"
         android:layout_marginTop="8dp"
@@ -105,22 +114,24 @@
         app:layout_constraintRight_toRightOf="@+id/btAddL"
         app:layout_constraintLeft_toLeftOf="@+id/btAddL"
         app:layout_constraintHorizontal_bias="0.52"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_red_dark"
+        android:textAllCaps="false" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/btAddPD"
         app:layout_constraintLeft_toLeftOf="@+id/btAddLD"
         app:layout_constraintRight_toRightOf="@+id/btAddLD"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="16dp"
-        android:text="P+"
-        android:textColor="@android:color/holo_green_light" />
+        android:text="+Point"
+        android:textColor="@android:color/holo_green_light"
+        android:textAllCaps="false" />
 
     <Button
-        android:text="L-"
-        android:layout_width="wrap_content"
+        android:text="-Life"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/btSubLD"
         app:layout_constraintLeft_toLeftOf="@+id/btSubL"
@@ -129,18 +140,20 @@
         app:layout_constraintTop_toBottomOf="@+id/btCentralD"
         app:layout_constraintBottom_toTopOf="@+id/btSubPD"
         android:layout_marginBottom="8dp"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_red_dark"
+        android:textAllCaps="false" />
 
     <Button
-        android:text="P-"
-        android:layout_width="wrap_content"
+        android:text="-Point"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/btSubPD"
         app:layout_constraintLeft_toLeftOf="@+id/btSubLD"
         app:layout_constraintRight_toRightOf="@+id/btSubLD"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="16dp"
-        android:textColor="@android:color/holo_green_light" />
+        android:textColor="@android:color/holo_green_light"
+        android:textAllCaps="false" />
 
     <TextView
         android:text="20/0"
