@@ -1,8 +1,12 @@
 package com.example.a47276138y.juegomagic;
 
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -34,16 +38,39 @@ public class Main_ActivityFragment extends Fragment {
     private int countVidaD= 20;
     private int countVenenoD =0;
 
+    View fragment;
+
 
     public Main_ActivityFragment() {
 
+    }
+
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.menu_main_fragment, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id==R.id.btReset){
+            reset();
+            Snackbar.make(fragment, "NEW GAME", Snackbar.LENGTH_LONG).show();
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View fragment = inflater.inflate(R.layout.fragment_main_, container, false);
+        fragment = inflater.inflate(R.layout.fragment_main_, container, false);
+
+        //Manifestem que aquest fragment sí que té menu.
+        setHasOptionsMenu(true);
 
         //Troba la id per a cada botó
         btCenArr = (Button) fragment.findViewById(R.id.btCentralU);
@@ -160,5 +187,17 @@ public class Main_ActivityFragment extends Fragment {
 
 
         return fragment;
+    }
+
+    public void reset(){
+        countVidaU = 20;
+        countVenenoU = 0;
+
+        countVidaD = 20;
+        countVenenoD = 0;
+
+        tvU.setText(countVidaU+"/"+countVidaU);
+        tvD.setText(countVidaD+"/"+countVenenoD);
+
     }
 }
