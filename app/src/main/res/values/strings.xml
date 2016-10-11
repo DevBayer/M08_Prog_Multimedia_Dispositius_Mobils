@@ -8,4 +8,7 @@
     <string name="_20_0">20/0</string>
     <string name="lifedown">LifeDown</string>
     <string name="lifeup">LifeUp</string>
+    <string name="life2">-Life</string>
+    <string name="point2">-Point</string>
+    <string name="_20_0_2">20/0</string>
 </resources>
