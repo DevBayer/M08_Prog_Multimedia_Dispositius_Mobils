@@ -2,4 +2,10 @@
     <string name="app_name">JuegoMagic</string>
     <string name="action_settings">Settings</string>
     <string name="addpoint">AddPoint</string>
+    <string name="life">+Life</string>
+    <string name="point">+Point</string>
+    <string name="reset">Reset</string>
+    <string name="_20_0">20/0</string>
+    <string name="lifedown">LifeDown</string>
+    <string name="lifeup">LifeUp</string>
 </resources>

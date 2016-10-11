@@ -94,7 +94,8 @@ public class Main_ActivityFragment extends Fragment {
             public void onClick(View v) {
                 countVidaD++;
                 countVidaU--;
-                tvU.setText(countVidaD+"/"+countVenenoD);
+                tvD.setText(countVidaD+"/"+countVenenoD);
+                tvU.setText(countVidaU+"/"+countVenenoU);
             }
         });
 
@@ -105,6 +106,7 @@ public class Main_ActivityFragment extends Fragment {
                 countVidaU++;
                 countVidaD--;
                 tvU.setText(countVidaU+"/"+countVenenoU);
+                tvD.setText(countVidaD+"/"+countVenenoD);
             }
         });
 
@@ -152,7 +154,7 @@ public class Main_ActivityFragment extends Fragment {
             public void onClick(View v) {
 
                 countVenenoD++;
-                tvU.setText(countVidaD + "/" + countVenenoD);
+                tvD.setText(countVidaD + "/" + countVenenoD);
             }
         });
 
@@ -161,7 +163,7 @@ public class Main_ActivityFragment extends Fragment {
             public void onClick(View v) {
 
                 countVenenoD--;
-                tvU.setText(countVidaD + "/" + countVenenoD);
+                tvD.setText(countVidaD + "/" + countVenenoD);
             }
         });
 
@@ -170,7 +172,7 @@ public class Main_ActivityFragment extends Fragment {
             public void onClick(View v) {
 
                 countVidaD++;
-                tvU.setText(countVidaD + "/" + countVenenoU);
+                tvD.setText(countVidaD + "/" + countVenenoU);
             }
         });
 
@@ -179,7 +181,7 @@ public class Main_ActivityFragment extends Fragment {
             public void onClick(View v) {
 
                 countVidaD--;
-                tvU.setText(countVidaD + "/" + countVenenoU);
+                tvD.setText(countVidaD + "/" + countVenenoU);
             }
         });
 
@@ -196,7 +198,7 @@ public class Main_ActivityFragment extends Fragment {
         countVidaD = 20;
         countVenenoD = 0;
 
-        tvU.setText(countVidaU+"/"+countVidaU);
+        tvU.setText(countVidaU+"/"+countVenenoU);
         tvD.setText(countVidaD+"/"+countVenenoD);
 
     }

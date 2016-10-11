@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android_Practicas-master.iml" filepath="$PROJECT_DIR$/Android_Practicas-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/M08_Prog_Multimedia_Dispositius_Mobils.iml" filepath="$PROJECT_DIR$/M08_Prog_Multimedia_Dispositius_Mobils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M08_Prog_Multimedia_Dispositius_Mobils.iml" filepath="$PROJECT_DIR$/M08_Prog_Multimedia_Dispositius_Mobils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
