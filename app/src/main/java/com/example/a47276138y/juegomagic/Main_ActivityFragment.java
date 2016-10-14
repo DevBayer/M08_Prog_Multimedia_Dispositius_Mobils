@@ -40,7 +40,6 @@ public class Main_ActivityFragment extends Fragment {
 
     View fragment;
 
-    Player p1;
 
 
     public Main_ActivityFragment() {
@@ -71,7 +70,6 @@ public class Main_ActivityFragment extends Fragment {
 
         fragment = inflater.inflate(R.layout.fragment_main_, container, false);
 
-        p1 = new Player();
 
         //Manifestem que aquest fragment sí que té menu.
         setHasOptionsMenu(true);
